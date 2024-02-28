@@ -1,0 +1,184 @@
+
+.screen1 {
+    background-image: url('../pics/01.jpeg');
+    background-size:  fit-content;
+    background-repeat: no-repeat;
+   
+    font-size: xx-large;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    filter:sepia(10%)
+   
+
+}
+.screen1 .textarea{
+    padding-top: 13%;
+}
+.screen1 h1{
+  
+    
+    color: white;
+    font-weight: bold;
+}
+.screen1 h3{
+  
+    
+    color: white;
+   font-size: xx-large;
+    
+    
+
+}
+.screen1 input{
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+    border: none;
+    border-radius: 10px;
+}
+.screen1 input::placeholder{
+    font-size: large;
+    border: none;
+   
+}
+.screen1  span{
+    color:aqua;
+    font-weight: bold;
+}
+li {
+    text-transform: capitalize;
+    list-style: none;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.screen2 p {
+    font-size: small;
+}
+
+.screen2 button {
+
+    color: white;
+    background-color: rgb(58, 58, 185);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: small;
+}
+
+.screen3 .disc {
+    font-size: x-small;
+    color: gray;
+
+}
+
+.screen4 .disc {
+    font-size: x-small;
+    color: gray;
+
+}
+
+.screen4 .courses {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: x-small;
+    box-shadow: rgb(226, 222, 222) 0px 0px 10px 2px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.screen4 .courses:hover {
+    transform: translateY(-10px)
+}
+
+.screen5 p {
+    font-size: small;
+}
+
+.screen5 .card2 {
+    display: none;
+}
+
+.screen5 .card3 {
+    display: none;
+}
+
+.screen5 .timming {
+    background-color: rgb(222, 233, 241);
+    height: 1.5em;
+    align-items: center;
+}
+
+.screen5 .pagebtn {
+    padding: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: none;
+    color: #227AFF;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.screen5 .pagebtn:hover {
+    color: white;
+    background-color: #227AFF;
+}
+
+.screen5 .active {
+    background-color: #227AFF;
+    color: white;
+    font-weight: bold;
+}
+.screen6 {
+    background-color: #deeafd;
+    
+}
+.screen6 .courses2{
+    background: white;
+    border-radius: 10px;
+}
+.screen6 .courses2 img{
+    
+    border-radius: 10px;
+}
+
+.screen7 h1{
+    font-weight: bold;
+    color: rgb(56, 63, 65);
+}
+.screen7 h1 span{
+    color: #227AFF;
+}
+.screen8{
+    background-color: #0a2858;
+    
+}
+.screen8 h1{
+    font-weight: bold;
+    color: white;
+}
+.screen8 h1 span{
+    
+    color: #227AFF;
+}
+footer{
+    background-color: #042D89;
+    color: white;
+}
+footer h4{
+font-weight: bold;
+}
+footer li{
+    list-style:disc;
+}
+footer .disc{
+    color: rgb(168, 166, 166);
+}
