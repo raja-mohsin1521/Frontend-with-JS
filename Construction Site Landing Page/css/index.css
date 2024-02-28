@@ -1,0 +1,254 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.screen1 {
+    background-image: url('/pics/banner.jpg');
+    background-repeat: no-repeat;
+
+
+}
+
+.screen1 header nav a {
+    color: white;
+    font-weight: bold;
+    font-size: small;
+}
+
+.screen1 header button {
+    border: none;
+    background-color: rgb(253, 73, 53);
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 9px;
+    color: white;
+    font-size: x-small;
+    border-radius: 3px;
+    margin-top: 2px;
+}
+
+.screen1 .mheading {
+    color: white;
+
+}
+
+.screen1 .mheading button {
+    border: none;
+    font-weight: bold;
+    background-color: rgb(253, 73, 53);
+    padding: 8px;
+    width: 120%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 9px;
+    color: white;
+    font-size: x-small;
+    border-radius: 3px;
+    margin-top: 2px;
+}
+
+.screen1 h1 {
+    font-weight: bold;
+
+
+}
+
+.screen1 .images {
+    position: relative;
+    top: -350px;
+    z-index: 1;
+
+
+}
+
+.screen1 .images img {
+    border-radius: 10px;
+}
+.screen5{
+    background-color: #F1F1F7;
+    background-image: url('/pics/inner-page.png');
+  background-size: 100vw 100vh;
+    height: 120vh;
+    width: 100vw;
+    overflow: hidden;
+}
+@media (min-width:768px) {
+    .screen1 {
+        height: 40em;
+
+        overflow: hidden;
+
+    }
+    .screen2 .card {
+        width: 30%;
+        margin-left: 25px;
+        margin-top:10px ;
+    }
+    .screen4 .cards{
+      width: 22.5%;
+      margin-left: 15px;
+      margin-top:15px ;
+    }
+    .screen5{
+        width: 96vw;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px){
+    .screen2 .card {
+        width: 48%;
+        margin-left: 10px;
+        margin-top:10px ;
+    }
+    .screen4 .cards{
+        width: 45%;
+        margin-left: 25px;
+        margin-top:25px ;
+      }
+      .screen5{
+        height: 35vh;
+       
+      }
+}
+@media  (max-width:575px){
+    .screen2 .card {
+        width: 81%;
+        margin-left: 35px;
+        margin-right: 25px;
+        margin-top:20px ;
+    }
+    .screen4 .cards{
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 25px;
+        margin-top:25px ;
+      }
+      .screen5{
+        height: 35vh;
+       
+      }
+}
+.screen2 {
+    background-color: #F1F1F7;
+}
+
+.screen2 .bimg {
+    background-image: url('/pics/shape.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.screen2 h1 {
+    font-weight: bold;
+    color: white;
+}
+
+.screen2 h2 {
+    font-weight: bold;
+    color: #071A44;
+}
+.screen2 .card{
+    color: white;
+    border-radius: 10px;
+}
+.screen2 .card img{
+    border-radius: 6px;
+    transition: transform 0.8s;
+}
+.screen2 .card a{
+    text-decoration: none;
+    color: #7D879D;
+   
+}
+.screen2 .card h6{
+    font-weight: 400;
+    transition: all 0.4s;
+}
+.screen2 .card .imge{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.screen2 .card img:hover{
+    transform: scale(1.1);
+  
+}
+.screen2 .card h6:hover{
+    color:#FF3318;
+    transform: scaleX(1.08);
+}
+.screen3 h1{
+    font-weight: bold;
+    color: #00133C;
+
+}
+.screen3 h1 span{
+    color: #DA3C3C;
+}
+.screen3 li{
+    list-style: none;
+    padding-top: 10px;
+    font-size: smaller;
+}
+.screen4 {
+    background-color: #00133C;
+}
+.screen4 h1{
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+.screen4 h1 span{
+    color: #DA3C3C;
+}
+.screen4 p{
+    color: white;
+    
+}
+.screen4 .cards{
+    background-color: white;
+    border-radius: 20px;
+    
+}
+.screen5h{
+    background-color: #F1F1F7;
+}
+.screen5h h1{
+    font-weight: bold;
+    color: #071A44;
+}
+
+.screen6{
+    background-color: #00133C;
+    border: none;
+    box-shadow: 0px -70px 120px 100px #00133C;
+}
+.screen6 h1{
+    font-weight: bold;
+    color: white;
+}
+.screen6 button{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    background-color: #FD4935;
+    color: white;
+    transition: all  0.4s;
+    
+}
+.screen6 button:hover{
+    background-color: #020918;
+}
+.screen6 p{
+    color: white;
+    font-size: small;
+}
+.screen6 p a{
+    text-decoration: none;
+    color: white;
+}
