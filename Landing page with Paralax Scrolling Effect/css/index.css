@@ -1,0 +1,229 @@
+*{
+    color: #004534;
+}
+body{
+    background-color: #FFF7EB;
+}
+@media (min-width:767px) {
+    .firstcontainer img{
+        margin-left: 40px;
+        margin-top: 30px;
+        width: 30.5%;
+    }
+    .thirdcontainer .content{
+        padding-top: 150px;
+    }
+}
+@media  (max-width:766px) {
+    .firstcontainer img{
+        margin-left: 40px;
+        margin-top: 30px;
+        width: 80%;
+    }
+    .firstcontainer .header{
+      
+   position: fixed;
+
+        
+    }
+}
+
+
+
+.firstcontainer{
+    background-image: url('/imgs/21+\(Header\)-01\ \(1\).jpg');
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.firstcontainer .nav{
+    margin-top: 30px;
+    
+}
+.firstcontainer .nav a{
+text-decoration: none;
+font-size: larger;
+font-weight: 600;
+color: #004534;
+}
+.firstcontainer button{
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    color: #004534;
+    font-weight: bold;
+    font-size: 40px;
+}
+.secondcontainer{
+    background-image: url('/imgs/wave-haikei.png');
+    height: 130vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+   
+
+}
+
+.secondcontainer h1{
+    font-family: "Bitstream Amerigo BT Bold";
+    font-weight: 600;
+    color: #004534;
+}
+.contentinside{
+    transform: translate(0%, 70%);
+}
+.secondcontainer p{
+
+    font-weight: 400;
+    color: #004534;
+}
+
+
+
+#c1{
+    background-color: #F9BCAC;
+}
+#c2{
+    background-color: #FFC73B;
+}
+#c3{
+    background-color: #F5E65B;
+}
+#c4{
+    background-color: #F9CDDD;
+}
+#c5{
+    background-color: #CCE981;
+}
+#c6{
+    background-color: #B9EDD6;
+}
+
+
+.thirdcontainer .content{
+
+padding-bottom: 300px;
+}
+
+.thirdcontainer .content h2{
+    font-family: "Bitstream Amerigo BT Bold";
+    font-weight: 600;
+    }
+
+.thirdcontainer .content p{
+   
+    margin-top: 35px;
+    font-weight: 400; 
+  }
+  
+  .thirdcontainer .content a{
+color: #004534;
+    font-size: 20px;
+    font-weight: 400; 
+  }
+  
+  .thirdcontainer .content button{
+    color: #004534;
+        font-size: 20px;
+        font-weight: 500; 
+        border: 3px solid #004534;
+        padding: 10px 25px;
+        border-radius: 100px;
+        transition: all 0.3s;
+      }
+      
+      .thirdcontainer .content button:hover{
+        color: #ffffff;
+        
+        background-color: #004534;
+       
+          }
+          .fourthcontainer{
+            background-image: url('/imgs/minna-variety-back-mint@2x.png');
+        background-size: cover;
+
+          margin-bottom: 200px;
+          }
+
+          .fourthcontainer .content h1{
+            font-family: "Bitstream Amerigo BT Bold";
+            font-weight: 600;
+            margin-top: 150px;
+            }
+        
+        .fourthcontainer .content p{
+           
+            margin-top: 35px;
+            font-weight: 400; 
+          }
+          
+     
+          
+          .fourthcontainer .content button{
+            color: #004534;
+                font-size: 20px;
+                font-weight: 500; 
+                border: 3px solid #004534;
+                padding: 10px 25px;
+                border-radius: 100px;
+                transition: all 0.3s;
+              }
+              
+              .fourthcontainer .content button:hover{
+                color: #ffffff;
+                
+                background-color: #004534;
+               
+                  }
+                  
+    .fifthcontainer img{
+        aspect-ratio: 4 / 4;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .fifthcontainer a{
+       
+       text-decoration: none;
+   font-size: 200%;
+   font-weight: 500;
+        color: #004534;
+transition: all 0.3s;
+    }
+    .fifthcontainer a:hover{
+        opacity: 0.6;
+    }
+    .sixthcontainer{
+        background-color: #004534;
+        color: #FFF7EB;
+    }
+
+
+    .sidebar{
+        position: fixed;
+        height: 100vh;
+        width: 0vw;
+        background-color: #DAE57F;
+        z-index: 1;
+        padding-top: 30px;
+        overflow: hidden;
+        transition: all 0.2s;
+    }
+
+    .sidebar li{
+        padding-left: 20px;
+        padding-top: 15px;
+        list-style: none;
+    }
+    .sidebar li a{
+        text-decoration: none;
+        font-size: 38px;
+        color: #004534;
+        font-weight: 500;
+    }
+    .sidebar button{
+        background-color: transparent;
+        border: none;
+        font-weight: bold;
+    }
