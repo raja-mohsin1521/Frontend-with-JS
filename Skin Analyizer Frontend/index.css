@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    font-family: outfit;
+}
+
+#working{
+    background-color: #66BCB9;
+    color: #FFFFFF;
+}
+
+
+#working h6{
+font-weight: 600;
+}
+#working h4{
+    font-weight: 600;
+    }
+    
+
+
+#about h6{
+    font-size: 220%;
+    font-weight: 500;
+    color: #66BCB9;
+}
+#about h4{
+  
+    font-weight: 500;
+}
+#about li{
+    font-weight: 400;
+    list-style: url('images/tick-circle.png');
+    padding: 7px 0px;
+}
+#about button{
+    background-color: #66BCB9;
+    Width:362px;
+    height:78px;
+    Padding:25px, 80px, 25px, 80px;
+    gap: 8px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 150%;
+    border-radius: 15px;
+}
+#reviews{
+    background-color: #F1F9F8;
+}
+#card{
+    background-image: url(images/Rectangle\ 41.png);
+ background-size: cover;
+    background-repeat: no-repeat;
+height: 75vh;
+border-radius: 50px;
+color: #FFFFFF;
+width: 88%;
+}
+#card h4{
+ 
+    font-weight: 600;
+
+}
+#card p{
+ 
+  font-size: 150%;
+
+}
+#card button{
+    background-color: #66BCB9;
+    Width:262px;
+    height:58px;
+    Padding:25px, 80px, 25px, 80px;
+    gap: 8px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 150%;
+    border-radius: 15px;
+}
+
+#contact{
+    width: 88%;
+}
