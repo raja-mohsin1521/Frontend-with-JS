@@ -2,6 +2,90 @@
 *{
     font-family: outfit;
 }
+p{
+    color: #6A6B7F;
+}
+#main{
+    background-color: #e7f3f2;
+}
+#home h5{
+    font-weight: 500;
+    color: #66BCB9;
+ font-size: 200%;
+}
+#home h4{
+    font-weight: 500;
+    
+ color: #060E0E;
+}
+#home h6{
+    font-weight: 500;
+    color: #66BCB9;
+ font-size: 400%;
+}
+#home .ccontainer
+{
+    background-image: url(images/Ellipse\ 1.png);
+    background-size: cover;
+}
+#home .card{
+    height: 80vh;
+    background: #FFFFFF;
+    border-radius: 40px;
+    width: 80%;
+    
+}
+.card .switches{
+    border: 1px solid black;
+   padding: 0px;
+   border-radius: 12px;
+}
+.ccontainer .card .switches button{
+    width: 49%;
+    height: 7vh;
+    border-radius: 12px;
+    margin: 0px;
+}
+.uploadOuter {
+    text-align: center;
+    padding: 20px;
+    strong {
+      padding: 0 10px
+    }
+  }
+  .dragBox {
+    width: 30vw;
+    height: 45vh;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    line-height: 55px;
+    color: #999;
+    border: 2px dashed #ccc;
+    display: inline-block;
+    transition: transform 0.3s;
+    input[type="file"] {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      top: 0;
+      left: 0;
+    }
+   
+  }
+  .draging {
+    transform: scale(1.1);
+  }
+  #scanbtn{
+    background-color: #66BCB9;
+    color: #FFFFFF;
+    font-size: 150%;
+    font-weight: 500;
+  
+
+  }
 
 #working{
     background-color: #66BCB9;
@@ -79,4 +163,39 @@ width: 88%;
 
 #contact{
     width: 88%;
+}
+#contact input{
+   height: 7vh;
+  margin:0px 0px 15px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #F1F2F3
+  ;
+}
+#contact textarea{
+    
+   margin:0px 0px 15px 10px;
+   border-radius: 10px;
+   border: none;
+   background-color: #F1F2F3
+   ;
+ }
+#contact h6{
+font-weight: 500;
+font-size: 170%;
+color:#66BCB9 ;
+}
+#contact span{
+    color: red;
+    font-weight: 900;
+}
+#contact h4{
+    font-weight: 500;
+    
+    
+    }
+footer{
+    background-color: #060E0E;
+    color: #F1F9F8;
+    font-weight: 100;
 }

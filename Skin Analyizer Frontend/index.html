@@ -13,7 +13,73 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container-fluid mt-5 py-5" id="working">
+    <div class="container-fluid" id="main">
+      <div class="container-fluid py-5" id="home">
+        <div class="row mt-5">
+          <div class="px-5 mx-5 col-md-5 col-12">
+            <h5 class="lead mt-5">The Leading AI Acne Analyzer</h5>
+            <h4 class="display-3 mt-5">
+              Explore Ai Enhanced Skin Acne Analysis
+            </h4>
+            <p class="lead mt-4">
+              Uncover the path to radiant skin with our revolutionary Acne
+              Analyzer Tool. Say goodbye to guesswork and hello to personalized
+              skincare solutions tailored just for you.
+            </p>
+            <div class="row mt-4 text-center">
+              <div class="col-md-4 col-6">
+                <h6>10k+</h6>
+                <p class="lead"><b>Active Users</b></p>
+              </div>
+              <div class="col-md-4 col-6">
+                <h6>10k+</h6>
+                <p class="lead"><b>Active Users</b></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 ccontainer">
+            <div class="row text-center mb-5">
+              <div class="card mb-5 offset-1 col-10">
+                <div class="row mt-5 ">
+                  <div class="offset-2 col-8  ">
+                    <div class="switches">
+                    <button class="">Analyze Skin</button>
+                    <button class="btn">Analyze Skin</button>
+                  </div>
+                  </div>
+                </div>
+              
+                <div class="uploadOuter">
+                  
+                  
+                  <span class="dragBox">
+                    Darg and Drop image here
+                    <br /><strong>OR</strong><br />
+                    <label for="uploadFile1" class="btn btn-warning">Upload Image</label>
+                    <input
+                      type="file"
+                      onChange="dragNdrop1(event)"
+                      ondragover="drag()"
+                      ondrop="drop()"
+                      id="uploadFile1"
+                    />
+                  </span>
+                </div>
+                <div class="row ">
+
+              
+                <button class="btn  my-3" id="scanbtn" >
+                  Scan Now
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5" id="working">
       <div class="row text-center my-4">
         <div class="offset-1 col-10">
           <h6 class="lead">How It Works</h6>
@@ -145,30 +211,31 @@
           </div>
         </div>
 
-        <div class="col-md-6">
-          <div class="row">
-            <h6>Fill out your details and we’ll be in touch</h6>
-            <h4>Drop us a message</h4>
-            <label for="name">Your name</label>
+        <div class="col-md-5">
+          <div class="row mt-5">
+            <h6 class="lead mb-4">
+              Fill out your details and we’ll be in touch
+            </h6>
+            <h4 class="display-4 mb-5">Drop us a message</h4>
+            <label for="name">Your name<span>*</span></label>
             <input type="text" name="" id="name" />
-            <label for="name">Your email address</label>
+            <label for="name">Your email address<span>*</span></label>
             <input type="text" name="" id="name" />
-            <label for="name">Message</label>
-            <textarea name="" id="message" cols="30" rows="10"></textarea>
+            <label for="name">Message<span>*</span></label>
+            <textarea name="" id="message" cols="30" rows="14"></textarea>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="container-fluid">
-        <hr>
+    <footer class="container-fluid pt-4 mt-5">
       <div class="row justify-content-around text-center">
         <div class="col-4">
           <p>Copyright 2023. All rights are reserved</p>
         </div>
         <div class="col-4">aaaaaa</div>
         <div class="col-4">
-          <div class="row ">
+          <div class="row">
             <div class="col-6 text-end">
               <p>Terms and conditions</p>
             </div>
