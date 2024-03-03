@@ -13,10 +13,108 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container-fluid" id="main">
+    <div class="bg-image"></div>
+
+    <div class="bg-text d-none">
+      <h2>Comparing Images</h2>
+      <p>Just give us a second to process your image</p>
+    </div>
+
+    <div class="container-fluid mb-5" id="result">
+      <div class="row text-center py-5">
+        <div class="col-md-8 col-12 offset-md-2">
+          <h5 class="lead mt-5">The Leading AI Acne Analyzer</h5>
+          <h4 class="display-3 mt-3">Explore Ai Enhanced Skin Acne Analysis</h4>
+          <p class="lead mt-4" style="padding: 0% 10%">
+            Uncover the path to radiant skin with our revolutionary Acne
+            Analyzer Tool. Say goodbye to guesswork and hello to personalized
+            skincare solutions tailored just for you.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-5 pt-5">
+        <div class="col-md-6 col-12">
+          <div class="row text-center">
+            <div class="col">
+              <img src="images/Rectangle 44.png" class="rounded-5" alt="" />
+            </div>
+          </div>
+          <div class="row mx-5 px-lg-5 mt-5">
+            <div class="col">
+              <h3>
+                Skin Score: <span class="text-danger">40%</span>
+                <span
+                  class="bg-danger"
+                  style="
+                    font-size: medium;
+                    color: #ffff;
+                    font-weight: 400;
+                    padding: 10px 20px;
+                    border-radius: 30px;
+                  "
+                  >Alarming</span
+                >
+              </h3>
+              <h3>Acne:</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus, voluptatem!
+              </p>
+              <h3>Discription</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                quos aliquid, quo sequi voluptates eius fugit iste vero modi,
+                nisi quis. Dolor vero, exercitationem eveniet quasi mollitia
+                voluptates rerum autem.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="row text-center">
+            <div class="col">
+              <img src="images/Rectangle 44 (1).png" class="rounded-5" alt="" />
+            </div>
+          </div>
+          <div class="row mx-5 px-lg-5 mt-5">
+            <div class="col">
+              <h3>
+                Skin Score: <span class="text-success">60%</span>
+                <span
+                  class="bg-success"
+                  style="
+                    font-size: medium;
+                    color: #ffff;
+                    font-weight: 400;
+                    padding: 10px 20px;
+                    border-radius: 30px;
+                  "
+                  >Average</span
+                >
+              </h3>
+              <h3>Acne:</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus, voluptatem!
+              </p>
+              <h3>Discription</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                quos aliquid, quo sequi voluptates eius fugit iste vero modi,
+                nisi quis. Dolor vero, exercitationem eveniet quasi mollitia
+                voluptates rerum autem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid d-none" id="main">
       <div class="container-fluid py-5" id="home">
         <div class="row mt-5">
-          <div class="px-5 mx-5 col-md-5 col-12">
+          <div class="px-md-5 mx-md-5 col-lg-5 col-12">
             <h5 class="lead mt-5">The Leading AI Acne Analyzer</h5>
             <h4 class="display-3 mt-5">
               Explore Ai Enhanced Skin Acne Analysis
@@ -37,40 +135,76 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-12 ccontainer">
+          <div class="col-lg-6 col-12 ccontainer mt-4 mt-md-0">
             <div class="row text-center mb-5">
               <div class="card mb-5 offset-1 col-10">
-                <div class="row mt-5 ">
-                  <div class="offset-2 col-8  ">
+                <div class="row mt-5">
+                  <div class="col">
                     <div class="switches">
-                    <button class="">Analyze Skin</button>
-                    <button class="btn">Analyze Skin</button>
-                  </div>
+                      <button id="analyizebtn" class="active">
+                        Analyze Skin
+                      </button>
+                      <button id="comparebtn" class="">Compare Results</button>
+                    </div>
                   </div>
                 </div>
-              
-                <div class="uploadOuter">
-                  
-                  
-                  <span class="dragBox">
+
+                <div class="uploadOuter" id="Analyize">
+                  <span class="dragBox" ondragover="drag()" ondrop="drop()">
                     Darg and Drop image here
                     <br /><strong>OR</strong><br />
-                    <label for="uploadFile1" class="btn btn-warning">Upload Image</label>
+                    <label for="uploadFile1" class="btn" id="uploadbtn"
+                      >Upload Image</label
+                    >
                     <input
                       type="file"
-                      onChange="dragNdrop1(event)"
-                      ondragover="drag()"
-                      ondrop="drop()"
+                      onchange="handleFileUpload(this)"
                       id="uploadFile1"
                     />
                   </span>
                 </div>
-                <div class="row ">
 
-              
-                <button class="btn  my-3" id="scanbtn" >
-                  Scan Now
-                </button>
+                <div class="row d-none" id="Compare">
+                  <div class="col-sm-6">
+                    <div class="uploadOuter before">
+                      <p>Before</p>
+                      <span class="dragBox" ondragover="drag()" ondrop="drop()">
+                        Darg and Drop image here
+                        <br /><strong>OR</strong><br />
+                        <label for="uploadFile1" class="btn w-75" id="uploadbtn"
+                          >Upload Image</label
+                        >
+                        <input
+                          type="file"
+                          onchange="handleFileUpload(this)"
+                          id="uploadFile1"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="uploadOuter After">
+                      <p>After</p>
+                      <span class="dragBox" ondragover="drag()" ondrop="drop()">
+                        Darg and Drop image here
+                        <br /><strong>OR</strong><br />
+                        <label for="uploadFile1" class="btn w-75" id="uploadbtn"
+                          >Upload Image</label
+                        >
+                        <input
+                          type="file"
+                          onchange="handleFileUpload(this)"
+                          id="uploadFile1"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row text-center">
+                  <div class="col">
+                    <button class="btn my-3 mb-5" id="scanbtn">Scan Now</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -86,8 +220,8 @@
           <h4 class="display-6 mt-4">
             Analyze Your Skin Acne In 3 Simple Steps
           </h4>
-          <div class="row mt-5 pt-3">
-            <div class="col-4">
+          <div class="row text-center justify-content-around mt-5 pt-3">
+            <div class="col-sm-4 col-6">
               <img src="images/fi_3945469 (1).png" class="img-fluid" alt="" />
               <h6 class="lead mt-4">Upload Image</h6>
               <p class="mt-4">
@@ -95,15 +229,15 @@
                 eros vehicula
               </p>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4 col-6">
               <img src="images/fi_11847174.png" class="img-fluid" alt="" />
               <h6 class="lead mt-4">Get Analyzed Results</h6>
-              <p class="mt-4">
+              <p class="mt-sm-4">
                 In in urna pretium, facilisis ante a, tristique quam. Integer a
                 eros vehicula
               </p>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4 col-6 mt-4 mt-sm-0">
               <img src="images/fi_2910751.png" class="img-fluid" alt="" />
               <h6 class="lead mt-4">Acne-Free Skin</h6>
               <p class="mt-4">
@@ -119,7 +253,7 @@
     <div class="container-fluid" id="about">
       <div class="row">
         <div
-          class="col-md-6 col-12 text-md-start text-center mt-md-5 pt-3 px-5 mx-4"
+          class="col-md-6 col-12 text-md-start text-center mt-md-5 pt-3 px-md-5 mx-md-4"
         >
           <h6 class="lead mt-5">About</h6>
           <h4 class="display-5 text-capitalize mt-4">
@@ -175,7 +309,7 @@
       <div class="container-fluid my-5 py-5" id="card">
         <div class="row mx-5">
           <div class="col-md-7">
-            <h4 class="display-4 mt-5 pt-4">
+            <h4 class="display-4 mt-md-5 pt-4">
               Acne Analyzer Skincare With Intelligent
             </h4>
             <p class="lead mt-4">
@@ -246,7 +380,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

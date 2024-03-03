@@ -2,11 +2,49 @@
 *{
     font-family: outfit;
 }
+.bg-image {
+    /* The image used */
+    background-image: url("images/Aboutmain.png");
+  
+    /* Add the blur effect */
+   
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    
+    color: black;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 30px 80px;
+   
+   
+  }
+
+
 p{
     color: #6A6B7F;
 }
 #main{
     background-color: #e7f3f2;
+   /* filter: blur(3px);
+    -webkit-filter: blur(5px);*/
 }
 #home h5{
     font-weight: 500;
@@ -29,24 +67,40 @@ p{
     background-size: cover;
 }
 #home .card{
-    height: 80vh;
+  
     background: #FFFFFF;
     border-radius: 40px;
     width: 80%;
     
 }
+.d-none{
+    transition: all 0.3s;
+}
 .card .switches{
-    border: 1px solid black;
+  
    padding: 0px;
    border-radius: 12px;
+   width: 90%;
+   margin: auto;
+   background-color: #F1F2F3;
+   border: none;
+   
 }
 .ccontainer .card .switches button{
     width: 49%;
     height: 7vh;
     border-radius: 12px;
     margin: 0px;
+    border: none;
+}
+.active{
+    background-color: #060E0E;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-style: 150%;
 }
 .uploadOuter {
+    
     text-align: center;
     padding: 20px;
     strong {
@@ -54,14 +108,17 @@ p{
     }
   }
   .dragBox {
-    width: 30vw;
+    background-color: #F1F2F3;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
     height: 45vh;
     margin: 0 auto;
     position: relative;
     text-align: center;
-    font-weight: bold;
+   overflow: hidden;
     line-height: 55px;
-    color: #999;
+    color: #060E0E;
     border: 2px dashed #ccc;
     display: inline-block;
     transition: transform 0.3s;
@@ -73,8 +130,10 @@ p{
       top: 0;
       left: 0;
     }
+    padding-top: 15%;
    
   }
+
   .draging {
     transform: scale(1.1);
   }
@@ -83,8 +142,21 @@ p{
     color: #FFFFFF;
     font-size: 150%;
     font-weight: 500;
-  
+  padding: 15px 0px;
+  width: 90%;
 
+  }
+.hidden{
+    display: hidden;
+}
+  #uploadbtn{
+    background-color: #66BCB9;
+    background-color: #66BCB9;
+    color: #FFFFFF;
+ 
+    font-weight: 500;
+  padding: 15px 0px;
+  width: 40%;
   }
 
 #working{
@@ -100,6 +172,9 @@ font-weight: 600;
     font-weight: 600;
     }
     
+    #working p{
+        color:#FFFFFF;
+    }
 
 
 #about h6{
@@ -147,6 +222,8 @@ width: 88%;
 #card p{
  
   font-size: 150%;
+ 
+    color:#FFFFFF;
 
 }
 #card button{
@@ -198,4 +275,37 @@ footer{
     background-color: #060E0E;
     color: #F1F9F8;
     font-weight: 100;
+}
+footer p{
+    color:#FFFFFF;
+}
+#result{
+    background-color:#e7f3f2;
+}
+#result h6{
+    font-weight: 500;
+    font-size: 250%;
+}
+#result h5{
+   color: #66BCB9;
+   font-weight: 500;
+}
+#result h4{
+    font-weight: 500;
+    font-size: 350%;
+    color: #060E0E;
+}
+#result h3{
+    font-size: 150%;
+    
+    color: #060E0E;
+}
+
+#result img{
+width: 35vw; height: 55vh;
+}
+@media  (max-width:767px){
+    #result img{
+        width: 55vw; height: 55vh;
+        }
 }
