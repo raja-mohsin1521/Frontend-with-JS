@@ -1,0 +1,301 @@
+
+.everything{
+
+.sec1 {
+    background-color: #082CA6;
+}
+.sec1 .img-container{
+   
+width: 20%;
+height: 8em;
+
+}
+.sec1 .main{
+    color: white;
+}
+.sec1 .main h6{
+    font-weight: 500;
+  
+}
+.sec1 .main p{
+    font-size: large;
+}
+.sec1 .main button{
+    padding: 10px 25px;
+    background: linear-gradient(to left,#FE9015 0%,#FF5E18 100%);
+    color: white;
+    font-weight: 500;
+    transition: all 1s;
+}
+.sec1 .main button:hover{
+ 
+    background: linear-gradient(to right,#FE9015 0%,#FF5E18 100%);
+}
+.sec1 .card{
+   
+    color: black;
+    border-radius: 10px;
+    }
+
+@media (min-width:575px) {
+    .sec1 .card{
+    width: 48%;
+    color: black;
+    }
+}
+@media (max-width:574px) {
+    .sec1 .card{
+    width: 70%;
+    
+    }
+}
+
+
+
+
+
+
+.sec2 .card{
+    padding:30px 35px;
+border-radius: 16px;
+border: none;
+box-shadow: 0px 0px 20px 5px gainsboro;
+transition: all 0.3s;
+}
+.sec2 .logo{
+    width: 40px;
+}
+.sec2 .img-inside{
+ 
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    padding: 20px 10px;
+    
+    
+
+}
+.sec2 .card a{
+    text-decoration: none;
+    margin-top: 2%;
+    border-radius: 100px;
+    padding:0px 10px;
+   padding-top: 13px;
+ 
+    border: 5px solid blue;
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:992px) {
+   .sec2  .mh{
+        position: relative;
+        top: 10%;
+        font-weight: 500;
+    }
+   .sec2  .card{
+        width: 27%;
+        height: 50vh;
+    }
+   .sec2  .card p{
+        font-size: small;
+        position: relative;
+        
+        top: -40%;
+    }
+   .sec2  .card h4{
+        font-size: medium;
+        font-weight: bold;
+        position: relative;
+        top: -40%;
+    }
+
+    #card1{
+      margin-top:10%;
+    }
+    #card2{
+        margin-top:5%;
+      }
+      #card3{
+        margin-top:1%;
+      }
+      #card5{
+       position: relative;
+       top: -44px;
+      }
+
+     .sec2  .card .img-inside{
+       position: relative;
+       top: -40%;
+      }
+    .sec2   .card .img-inside img{
+    margin: 45px 0px;
+      }
+    .sec2   .card a{
+        position: relative;
+        top: -30%;
+      }
+}
+@media (min-width:576px) and (max-width:991px) {
+  .sec2   .card .img-inside{
+        width: 100%;
+        position: relative;
+        top: -24%;
+       }
+     .sec2   .card .img-inside img{
+        width:46px ;
+        padding-top: 60px;
+     margin: 35px 0px;
+       }
+
+  .sec2   .card{
+        width: 44%;
+        margin: 30px 0px;
+        
+    }
+  .sec2   .card img{
+        position: relative;
+        top: -22%;
+    }
+}
+@media  (max-width:575px) {
+    .sec2 .card a{
+     
+        padding:0px 15px;
+       padding-top: 20px;
+     
+      
+    }
+   
+ .sec2    .card .img-inside{
+        width: 100%;
+        position: relative;
+        top: -24%;
+       }
+    .sec2    .card .img-inside img{
+        width:46px ;
+        padding-top: 60px;
+     margin: 35px 0px;
+       }
+   .sec2  .card{
+        width: 80%;
+        margin: 30px 0px;
+        
+    }
+   .sec2  .card img{
+        position: relative;
+        top: -22%;
+    }
+}
+.sec2 .card img{
+    transition: all 0.6s;
+}
+
+
+
+
+@media (min-height:671px) and (max-height:1000px) {
+    .sec2  .card p{
+        font-size: large;
+        position: relative;
+        
+        top: -22%;
+    }
+   .sec2  .card h4{
+        font-size: x-large;
+        font-weight: bold;
+        position: relative;
+        top: -22%;
+    }
+    .sec2 .card a{
+     position: relative;
+      top: -20%;
+      
+    }
+
+}
+@media (min-height:1001px)  {
+
+    .sec2    .card .img-inside{
+        width: 100%;
+        position: relative;
+        top: -20%;
+       }
+
+    .sec2  .card p{
+        font-size: x-large;
+        position: relative;
+        
+        top: -16%;
+    }
+   .sec2  .card h4{
+        font-size: xx-large;
+        font-weight: bold;
+        position: relative;
+        top: -16%;
+    }
+    .sec2 .card a{
+     position: relative;
+      top: -14%;
+      
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.sec3 .mh{
+    font-weight: 600;
+    
+}
+.sec3 .sh{
+    font-weight: 500;
+    font-size: x-large;
+    color:#45289F ;
+}
+.sec3 .hr{
+   padding: 1px 0px;
+    background: linear-gradient(to left,#6356BA 0%,#65EAFF 100%);
+}
+.sec3 .para{
+    font-weight: 500;
+    font-size: large;
+}
+
+.sec3 li{
+    list-style:url('/imgs/check.svg');
+}
+.sec3 a{
+    border: 1px solid black;
+    color: #45289F;
+    padding: 0px 20px;
+    padding: 10px 0px;
+    text-decoration: none;
+    border-radius: 50px;
+    padding-left: 30px;
+}
+.sec3 a span{
+    border: 1px solid #45289F;
+    margin-left: 30px;
+    padding:10px 14px;
+    border-radius: 100px;
+    background-color: #45289F;
+    color: white;
+}
+}

@@ -1,0 +1,235 @@
+.sec1{
+    background-image: url('../imgs/WhatsApp\ Image\ 2023-11-22\ at\ 9.27.47\ AM.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+  
+}
+    
+    .sec1 .fpara{
+         font-weight: bold;
+         color: #FF6D00;
+         line-height: 0;
+     }
+     .sec1 .mheading{
+         font-weight: bold;
+         color: white;
+     }
+     .sec1 .para{
+         color: white;
+         line-height: 0.8;
+     }
+    .sec1  .btn{
+         background: linear-gradient(to left,#035ded 0%,#1f5ec4 100%);
+         color: white;
+         font-size: medium;
+         font-weight: bold;
+         padding: 15px 30px;
+         border-radius: 10px;
+         
+     }
+     .sec1 .card{
+         padding: 15px 50px;
+         border-radius: 10px;
+         
+     }
+     .sec1 .mp{
+         line-height: 0;
+         font-weight: 500;
+         color:#FF9A4E;
+     
+     }
+     .sec1 .mh{
+         font-weight: bold;
+         font-size: xx-large;
+       
+     }
+     .sec1 input{
+         padding: 15px 30px;
+         border: none;
+         background-color: #F4F5F9;
+     }
+     .sec1 .textarea{
+         padding: 10px;
+         border: none;
+         background-color: #F4F5F9;
+     }
+
+
+    .sec2 .mheading{
+        font-weight: 700;
+    }
+   .sec2 .cheading{
+        font-weight: 800;
+        font-size: x-large;
+    }
+  .sec2  .card{
+        padding: 10px 50px;
+        background-color: #fcf7f7;
+        border: none;
+    }
+   .sec2 .card img{
+        width: 28%;
+        border: 1px solid black;
+        border-radius: 50px;
+        padding: 10px;
+        background-color: #EDE6F6;
+    }
+    .sec2  .c{
+        width: 30%;
+    }
+    @media (min-width:973px) {
+      .sec2  .c{
+            width: 30%;
+        }
+       .sec2 .card{
+            width: 23%;
+        }
+    }
+    @media (min-width:576px)and (max-width:973px) {
+      
+       .sec2 .card{
+            width: 48%;
+        }
+        .sec2 .card img{
+            width: 55px;
+        }
+    }
+    @media (max-width:575px) {
+      .sec2  .c{
+            width: 90%;
+        }
+       .sec2 .card{
+            width: 90%;
+        }
+       .sec2 .card img{
+            width: 20%;
+        }
+    }
+
+   
+
+
+
+   .sec3 .mh{
+        font-weight: 700;
+        
+    }
+  .sec3  .c .imgc{
+      padding: 30px 0px;
+        border-radius: 50px;
+    
+    
+        width: 35%;
+        margin: auto;
+    }
+  .sec3  .c .imgc img{
+        width: 40%;
+        height: fit-content;
+      
+    }
+  .sec3  .c p{
+        line-height: 1;
+    }
+   .sec3 .cheading{
+        font-weight: 700;
+    }
+   .sec3 #img1{
+        background-color: #C8E0FA;
+    }
+  .sec3  #img2{
+        background-color: #E5D5F9;
+    }
+   .sec3 #img3{
+        background-color: #D0EDD1;
+    }
+   .sec3 #img4{
+        background-color: #C8E0FA;
+    }
+   .sec3 #img5{
+        background-color: #E5D5F9;
+    }
+    @media (min-width:992px) {
+      .sec3  .c{
+            width: 19%;
+        }
+      .sec3  .c .imgc{
+            padding: 30px 0px;
+              border-radius: 50px;
+          
+          
+              width: 105px;
+              margin: auto;
+          }
+       .sec3   .c .imgc img{
+              width: 40%;
+              height: fit-content;
+            
+          }
+    }
+    @media (max-width:575px) {
+       .sec3 .c{
+            width: 90%;
+        }
+       .sec3 .c .imgc{
+            padding: 30px 0px;
+              border-radius: 50px;
+          
+          
+              width: 105px;
+              margin: auto;
+          }
+        .sec3  .c .imgc img{
+              width: 40%;
+              height: fit-content;
+            
+          }
+    }
+
+
+     
+    .sec4 .mheading h1 {
+        color: #132a3e;
+        font-weight: 700;
+      }
+    .sec4 .mheading p {
+        color: #132a70;
+        font-weight: 500;
+        font-size: large;
+      }
+    .sec4 .section{
+          background-color: #D4DCE1;
+      }
+    .sec4 .section p{
+          font-size: large;
+          font-weight: 500;
+      }
+    .sec4 .section h3{
+          color: #132A3E;
+          font-weight: bold;
+        
+      }
+    .sec4 .section h5{
+          font-weight: 500;
+      }
+    .sec4 .section .btn-btn{
+          background-color: #035ded;
+          color: white;
+          font-weight: bold;
+          font-size: large;
+          border: none;
+          padding:15px 20px;
+          transition: opacity 0.3s;
+      }
+    .sec4 .section button:hover{
+          opacity: 0.9;
+      }
+      .section .li h5{
+          font-weight: 500;
+      } 
+      
+      @media only screen and (max-width: 991px){
+        .sec4 .section p{
+              font-size: large;
+              font-weight: 400;
+          }
+      }

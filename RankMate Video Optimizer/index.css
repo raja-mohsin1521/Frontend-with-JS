@@ -1,0 +1,261 @@
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+
+nav{
+    
+    
+ 
+  padding: 20px 0px;
+  margin: auto;
+  margin-top: 20px;
+    z-index: 1;
+    background-color: #d4d4d4;
+   
+}
+nav li a:hover{
+  color: #00ff99;
+}
+nav li a.active{
+font-weight: 400;
+color: #1b2f27;
+text-decoration: underline;
+}
+.collapse{
+  margin:0% 3%;
+  font-size: large;
+}
+.collapse li{
+  margin: 0px 40px;
+}
+.collapse li a{
+  color: #1b2f27;
+}
+@media (min-width:992px) {
+  .collapse li a button{
+    margin-left: 300px;
+  }
+}
+body {
+  background-color: #f3f2eb;
+}
+* {
+  scroll-behavior: smooth;
+}
+
+.home {
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+.home .img-container {
+  overflow: hidden;
+  border-radius: 120px 10px 10px 120px;
+}
+.home .content {
+  margin-top: 5%;
+}
+.home .content h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #1b2f27;
+}
+.home .content p {
+  width: 92%;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #1b2f27;
+}
+.home .content button {
+  padding: 9px 25px;
+}
+
+.features {
+  background-color: #1b2f27;
+}
+.features h1 {
+  color: #f3f2eb;
+  font-weight: 500;
+  font-family: Arial Helvetica sans-serif;
+}
+.features p {
+  color: #f3f2eb;
+  width: 96%;
+}
+.features hr {
+  color: #f3f2eb;
+}
+.feature {
+  transition: all 0.3s;
+}
+.feature:hover {
+  background-color: rgb(30, 30, 32);
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+.video-recomendation h1 {
+    font-weight: 400;
+    font-family: Arial Helvetica sans-serif;
+    color: #1b2f27;
+  }
+  .video-recomendation .input-group-text {
+    color: #f3f2eb;
+    background-color: #1b2f27;
+    width: 18%;
+  }
+  .video-recomendation input {
+    background-color: #f3f2eb;
+    border: 1px solid #1b2f27;
+  }
+  .video-recomendation input::placeholder {
+    color: #1b2f27;
+    padding: 20px 5px;
+  }
+  .video-recomendation select {
+    background-color: #f3f2eb;
+    border: 1px solid #1b2f27;
+  }
+  
+  .video-recomendation button {
+    padding: 12px 55px;
+    border-radius: 15px;
+    font-size: large;
+    background-color: #1b2f27;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+  .video-recomendation img{
+    box-shadow: #1b2f278c 12px 15px 25px 10px;
+  }
+  .results h1 {
+      font-weight: 400;
+      font-family: Arial Helvetica sans-serif;
+      color: #1b2f27;
+    }
+  .card {
+    color: #1b2f27;
+  
+    background-color: #f3f2eb;
+    border-radius: 12px;
+    border: none;
+    box-shadow: #1b2f27 10px 10px 20px 5px;
+  }
+  .card h1 {
+    font-family: Arial Helvetica sans-serif;
+  }
+  .card p {
+    font-weight: 300;
+    font-size: medium;
+  }
+  
+  @media (min-width: 992px) {
+    .card {
+      width: 31%;
+      margin: 30px 0px;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 991px) {
+    .card {
+      width: 45%;
+      margin: 30px 0px;
+    }
+    .video-recomendation .input-group-text {
+    
+      width: 24%;
+    }
+  }
+  @media  (max-width: 575px) {
+    .card {
+      width: 86%;
+      margin: 30px 0px;
+    }
+    .video-recomendation .input-group-text {
+    
+      width: 32%;
+    }
+  }
+  .card button{
+      font-size: large;
+      font-weight: 500;
+      font-family: Arial Helvetica sans-serif;
+  }
+
+
+
+
+
+
+
+
+
+
+
+.about {
+  background-color: #f3f2eb;
+}
+.about h1 {
+  font-weight: 400;
+  font-family: Arial Helvetica sans-serif;
+  color: #1b2f27;
+}
+.about p {
+  color: #1b2f27;
+  width: 95%;
+}
+.about img {
+  box-shadow: #1b2f2769 20px 20px 30px 10px;
+}
+.contact h1 {
+  font-weight: 400;
+  font-family: Arial Helvetica sans-serif;
+  color: #1b2f27;
+}
+
+.contact input {
+  width: 90%;
+  padding: 12px 15px;
+  border-radius: 30px;
+  background-color: #f3f2eb;
+  border: 1px solid #1b2f27;
+}
+.contact textarea {
+  border-radius: 30px;
+  width: 98%;
+  background-color: #f3f2eb;
+  border: 1px solid #1b2f27;
+}
+.contact textarea::placeholder {
+  font-size: large;
+  color: #1b2f27;
+  padding: 10px 20px;
+}
+.contact input::placeholder {
+  padding: 10px 20px;
+  color: #1b2f27;
+  font-size: large;
+}
+.contact button {
+  padding: 12px 55px;
+  border-radius: 15px;
+  font-size: large;
+  background-color: #1b2f27;
+  margin-bottom: 30px;
+}
+footer {
+  background-color: #1b2f27;
+  color: #f3f2eb;
+  font-size: large;
+  height: 30vh;
+}
+footer a {
+  color: #f3f2eb;
+  font-family: sans-serif;
+}
