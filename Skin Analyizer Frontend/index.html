@@ -20,7 +20,7 @@
       <p>Just give us a second to process your image</p>
     </div>
 
-    <div class="container-fluid mb-5" id="result">
+    <div class="container-fluid mb-5 d-none" id="result">
       <div class="row text-center py-5">
         <div class="col-md-8 col-12 offset-md-2">
           <h5 class="lead mt-5">The Leading AI Acne Analyzer</h5>
@@ -111,7 +111,7 @@
       </div>
     </div>
 
-    <div class="container-fluid d-none" id="main">
+    <div class="container-fluid " id="main">
       <div class="container-fluid py-5" id="home">
         <div class="row mt-5">
           <div class="px-md-5 mx-md-5 col-lg-5 col-12">
@@ -150,15 +150,17 @@
                 </div>
 
                 <div class="uploadOuter" id="Analyize">
-                  <span class="dragBox" ondragover="drag()" ondrop="drop()">
+                  <span class="dragBox analizeimg" ondragover="drag()" ondrop="drop()">
+                   
                     Darg and Drop image here
                     <br /><strong>OR</strong><br />
-                    <label for="uploadFile1" class="btn" id="uploadbtn"
+                    <label for="uploadFile1" class="btn" id="uploadbtn1"
                       >Upload Image</label
                     >
+                  
                     <input
                       type="file"
-                      onchange="handleFileUpload(this)"
+                      onchange="handleFileUpload1(this)"
                       id="uploadFile1"
                     />
                   </span>
@@ -166,35 +168,40 @@
 
                 <div class="row d-none" id="Compare">
                   <div class="col-sm-6">
-                    <div class="uploadOuter before">
-                      <p>Before</p>
-                      <span class="dragBox" ondragover="drag()" ondrop="drop()">
+                    <div class="uploadOuter Before">
+                      
+                      <span class="dragBox2 showimg2">
+                       
+                      <div class="content2">
                         Darg and Drop image here
                         <br /><strong>OR</strong><br />
-                        <label for="uploadFile1" class="btn w-75" id="uploadbtn"
-                          >Upload Image</label
-                        >
+                        <label for="uploadFile2" class="btn  " id="uploadbtn2">Upload Image</label>
+                      </div>
                         <input
                           type="file"
-                          onchange="handleFileUpload(this)"
-                          id="uploadFile1"
+                          onChange="dragNdrop2(event)"
+                          ondragover="drag()"
+                          ondrop="drop()"
+                          id="uploadFile2"
                         />
                       </span>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="uploadOuter After">
-                      <p>After</p>
-                      <span class="dragBox" ondragover="drag()" ondrop="drop()">
+                     
+                      <span class="dragBox3 showimg3">
+                        <div class="content3">
                         Darg and Drop image here
                         <br /><strong>OR</strong><br />
-                        <label for="uploadFile1" class="btn w-75" id="uploadbtn"
-                          >Upload Image</label
-                        >
+                        <label for="uploadFile3" class="btn "id="uploadbtn3" >Upload Image</label>
+                      </div>
                         <input
                           type="file"
-                          onchange="handleFileUpload(this)"
-                          id="uploadFile1"
+                          onChange="dragNdrop3(event)"
+                          ondragover="drag()"
+                          ondrop="drop()"
+                          id="uploadFile3"
                         />
                       </span>
                     </div>
@@ -203,7 +210,7 @@
 
                 <div class="row text-center">
                   <div class="col">
-                    <button class="btn my-3 mb-5" id="scanbtn">Scan Now</button>
+                    <button class="btn my-3 mb-5"  id="scanbtn" >Scan Now</button>
                   </div>
                 </div>
               </div>
@@ -317,7 +324,7 @@
               Technology With User-Friendly Features..
             </p>
             <button class="btn">Scan Now</button>
-            <div class="row">
+            <div class="row mb-5 pb-5">
               <div class="col-md-4 col-6">
                 <h4 class="display-4 mt-3">10k+</h4>
                 <p>Active Users</p>

@@ -1,311 +1,292 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-*{
-    font-family: outfit;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  font-family: outfit;
 }
 .bg-image {
-    /* The image used */
-    background-image: url("images/Aboutmain.png");
-  
-    /* Add the blur effect */
-   
-  
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-  }
-  
-  /* Position text in the middle of the page/image */
-  .bg-text {
-    background-color: rgb(255, 255, 255); /* Fallback color */
-    
-    color: black;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 50%;
-    padding: 30px 80px;
-   
-   
-  }
+  /* The image used */
+  background-image: url("images/Aboutmain.png");
 
+  /* Add the blur effect */
 
-p{
-    color: #6A6B7F;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#main{
-    background-color: #e7f3f2;
-   /* filter: blur(3px);
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(255, 255, 255); /* Fallback color */
+
+  color: black;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 30px 80px;
+}
+
+p {
+  color: #6a6b7f;
+}
+#main {
+  background-color: #e7f3f2;
+  /* filter: blur(3px);
     -webkit-filter: blur(5px);*/
 }
-#home h5{
-    font-weight: 500;
-    color: #66BCB9;
- font-size: 200%;
+#home h5 {
+  font-weight: 500;
+  color: #66bcb9;
+  font-size: 200%;
 }
-#home h4{
-    font-weight: 500;
-    
- color: #060E0E;
+#home h4 {
+  font-weight: 500;
+
+  color: #060e0e;
 }
-#home h6{
-    font-weight: 500;
-    color: #66BCB9;
- font-size: 400%;
+#home h6 {
+  font-weight: 500;
+  color: #66bcb9;
+  font-size: 400%;
 }
-#home .ccontainer
-{
-    background-image: url(images/Ellipse\ 1.png);
-    background-size: cover;
+#home .ccontainer {
+  background-image: url(images/Ellipse\ 1.png);
+  background-size: cover;
 }
-#home .card{
-  
-    background: #FFFFFF;
-    border-radius: 40px;
-    width: 80%;
-    
+#home .card {
+  background: #ffffff;
+  border-radius: 40px;
+  width: 80%;
 }
-.d-none{
-    transition: all 0.3s;
+.d-none {
+  transition: all 0.3s;
 }
-.card .switches{
-  
-   padding: 0px;
-   border-radius: 12px;
-   width: 90%;
-   margin: auto;
-   background-color: #F1F2F3;
-   border: none;
-   
+.card .switches {
+  padding: 0px;
+  border-radius: 12px;
+  width: 90%;
+  margin: auto;
+  background-color: #f1f2f3;
+  border: none;
 }
-.ccontainer .card .switches button{
-    width: 49%;
-    height: 7vh;
-    border-radius: 12px;
-    margin: 0px;
-    border: none;
+.ccontainer .card .switches button {
+  width: 49%;
+  height: 7vh;
+  border-radius: 12px;
+  margin: 0px;
+  border: none;
 }
-.active{
-    background-color: #060E0E;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-style: 150%;
+.active {
+  background-color: #060e0e;
+  color: #ffffff;
+  font-weight: 500;
+  font-style: 150%;
 }
 .uploadOuter {
-    
-    text-align: center;
-    padding: 20px;
-    strong {
-      padding: 0 10px
-    }
+  text-align: center;
+  padding: 20px;
+  strong {
+    padding: 0 10px;
   }
-  .dragBox {
-    background-color: #F1F2F3;
-    border-radius: 20px;
-    text-align: center;
+}
+.dragBox,
+.dragBox2,
+.dragBox3 {
+  background-color: #f1f2f3;
+  border-radius: 20px;
+  text-align: center;
+  width: 100%;
+  height: 45vh;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  line-height: 55px;
+  color: #060e0e;
+  border: 2px dashed #ccc;
+  display: inline-block;
+  transition: transform 0.3s;
+  input[type="file"] {
+    position: absolute;
+    height: 100%;
     width: 100%;
-    height: 45vh;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-   overflow: hidden;
-    line-height: 55px;
-    color: #060E0E;
-    border: 2px dashed #ccc;
-    display: inline-block;
-    transition: transform 0.3s;
-    input[type="file"] {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      top: 0;
-      left: 0;
-    }
-    padding-top: 15%;
-   
+    opacity: 0;
+    top: 0;
+    left: 0;
   }
+  padding-top: 15%;
+}
 
-  .draging {
-    transform: scale(1.1);
-  }
-  #scanbtn{
-    background-color: #66BCB9;
-    color: #FFFFFF;
-    font-size: 150%;
-    font-weight: 500;
+.draging {
+  transform: scale(1.1);
+}
+#scanbtn {
+  background-color: #66bcb9;
+  color: #ffffff;
+  font-size: 150%;
+  font-weight: 500;
   padding: 15px 0px;
   width: 90%;
-
-  }
-.hidden{
-    display: hidden;
 }
-  #uploadbtn{
-    background-color: #66BCB9;
-    background-color: #66BCB9;
-    color: #FFFFFF;
- 
-    font-weight: 500;
+.hidden {
+  display: hidden;
+}
+#uploadbtn1,
+#uploadbtn2,
+#uploadbtn3 {
+  background-color: #66bcb9;
+  background-color: #66bcb9;
+  color: #ffffff;
+
+  font-weight: 500;
   padding: 15px 0px;
   width: 40%;
-  }
-
-#working{
-    background-color: #66BCB9;
-    color: #FFFFFF;
 }
 
+#working {
+  background-color: #66bcb9;
+  color: #ffffff;
+}
 
-#working h6{
-font-weight: 600;
+#working h6 {
+  font-weight: 600;
 }
-#working h4{
-    font-weight: 600;
-    }
-    
-    #working p{
-        color:#FFFFFF;
-    }
+#working h4 {
+  font-weight: 600;
+}
 
+#working p {
+  color: #ffffff;
+}
 
-#about h6{
-    font-size: 220%;
-    font-weight: 500;
-    color: #66BCB9;
+#about h6 {
+  font-size: 220%;
+  font-weight: 500;
+  color: #66bcb9;
 }
-#about h4{
-  
-    font-weight: 500;
+#about h4 {
+  font-weight: 500;
 }
-#about li{
-    font-weight: 400;
-    list-style: url('images/tick-circle.png');
-    padding: 7px 0px;
+#about li {
+  font-weight: 400;
+  list-style: url("images/tick-circle.png");
+  padding: 7px 0px;
 }
-#about button{
-    background-color: #66BCB9;
-    Width:362px;
-    height:78px;
-    Padding:25px, 80px, 25px, 80px;
-    gap: 8px;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 150%;
-    border-radius: 15px;
-}
-#reviews{
-    background-color: #F1F9F8;
-}
-#card{
-    background-image: url(images/Rectangle\ 41.png);
- background-size: cover;
-    background-repeat: no-repeat;
-height: 75vh;
-border-radius: 50px;
-color: #FFFFFF;
-width: 88%;
-}
-#card h4{
- 
-    font-weight: 600;
-
-}
-#card p{
- 
+#about button {
+  background-color: #66bcb9;
+  width: 362px;
+  height: 78px;
+  padding: 25px, 80px, 25px, 80px;
+  gap: 8px;
+  color: #ffffff;
+  font-weight: 500;
   font-size: 150%;
- 
-    color:#FFFFFF;
+  border-radius: 15px;
+}
+#reviews {
+  background-color: #f1f9f8;
+}
+#card {
+  background-image: url(images/Rectangle\ 41.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75vh;
+  border-radius: 50px;
+  color: #ffffff;
+  width: 88%;
+}
+#card h4 {
+  font-weight: 600;
+}
+#card p {
+  font-size: 150%;
 
+  color: #ffffff;
 }
-#card button{
-    background-color: #66BCB9;
-    Width:262px;
-    height:58px;
-    Padding:25px, 80px, 25px, 80px;
-    gap: 8px;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 150%;
-    border-radius: 15px;
+#card button {
+  background-color: #66bcb9;
+  width: 262px;
+  height: 58px;
+  padding: 25px, 80px, 25px, 80px;
+  gap: 8px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 150%;
+  border-radius: 15px;
 }
 
-#contact{
-    width: 88%;
+#contact {
+  width: 88%;
 }
-#contact input{
-   height: 7vh;
-  margin:0px 0px 15px 10px;
+#contact input {
+  height: 7vh;
+  margin: 0px 0px 15px 10px;
   border-radius: 10px;
   border: none;
-  background-color: #F1F2F3
-  ;
+  background-color: #f1f2f3;
 }
-#contact textarea{
-    
-   margin:0px 0px 15px 10px;
-   border-radius: 10px;
-   border: none;
-   background-color: #F1F2F3
-   ;
- }
-#contact h6{
-font-weight: 500;
-font-size: 170%;
-color:#66BCB9 ;
+#contact textarea {
+  margin: 0px 0px 15px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f1f2f3;
 }
-#contact span{
-    color: red;
-    font-weight: 900;
+#contact h6 {
+  font-weight: 500;
+  font-size: 170%;
+  color: #66bcb9;
 }
-#contact h4{
-    font-weight: 500;
-    
-    
-    }
-footer{
-    background-color: #060E0E;
-    color: #F1F9F8;
-    font-weight: 100;
+#contact span {
+  color: red;
+  font-weight: 900;
 }
-footer p{
-    color:#FFFFFF;
+#contact h4 {
+  font-weight: 500;
 }
-#result{
-    background-color:#e7f3f2;
+footer {
+  background-color: #060e0e;
+  color: #f1f9f8;
+  font-weight: 100;
 }
-#result h6{
-    font-weight: 500;
-    font-size: 250%;
+footer p {
+  color: #ffffff;
 }
-#result h5{
-   color: #66BCB9;
-   font-weight: 500;
+#result {
+  background-color: #e7f3f2;
 }
-#result h4{
-    font-weight: 500;
-    font-size: 350%;
-    color: #060E0E;
+#result h6 {
+  font-weight: 500;
+  font-size: 250%;
 }
-#result h3{
-    font-size: 150%;
-    
-    color: #060E0E;
+#result h5 {
+  color: #66bcb9;
+  font-weight: 500;
+}
+#result h4 {
+  font-weight: 500;
+  font-size: 350%;
+  color: #060e0e;
+}
+#result h3 {
+  font-size: 150%;
+
+  color: #060e0e;
 }
 
-#result img{
-width: 35vw; height: 55vh;
+#result img {
+  width: 35vw;
+  height: 55vh;
 }
-@media  (max-width:767px){
-    #result img{
-        width: 55vw; height: 55vh;
-        }
+@media (max-width: 767px) {
+  #result img {
+    width: 55vw;
+    height: 55vh;
+  }
 }
