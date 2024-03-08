@@ -1,3 +1,28 @@
+let togglebtn=document.getElementsByClassName('togglebtn')[0]
+let mobileview=document.getElementsByClassName('mobileview')[0]
+
+
+togglebtn.addEventListener("click",function(){
+    if(mobileview.classList.contains('view')){
+        mobileview.classList.remove('view')
+        mobileview.style.height='0vh'
+    }
+    else{
+        mobileview.classList.add('view')
+        mobileview.style.height='30vh'
+    }
+   
+})
+
+
+
+
+
+
+
+
+
+
 let imagePreview2 = document.createElement('img');
 
 let analyizebtn=document.getElementById('analyizebtn')
@@ -45,6 +70,8 @@ function handleFileUpload1(input) {
         reader.onload = function (e) {
             const imagePreview = document.createElement('img');
             imagePreview.src = e.target.result;
+            imagePreview.style.height='45vh'
+            imagePreview.style.width='100%'
             imagePreview.classList.add('imagePreview','img-fluid');
 
             const uploadBtn = document.getElementById('uploadbtn');
@@ -69,7 +96,10 @@ function dragNdrop2(event) {
     var previewImg = document.createElement("img");
 
     previewImg.setAttribute("src", fileName2);
-    
+    previewImg.style.height='45vh'
+    previewImg.style.width='100%'
+    document.getElementsByClassName('dragBox2')[0].style.paddingTop='0px'
+
     let content2=document.getElementsByClassName('content2')[0]
     content2.innerHTML=""
     
@@ -91,7 +121,9 @@ function dragNdrop3(event) {
    
     var previewImg = document.createElement("img");
     previewImg.setAttribute("src", fileName3);
-  
+    previewImg.style.height='45vh'
+    previewImg.style.width='100%'
+    document.getElementsByClassName('dragBox3')[0].style.paddingTop='0px'
   
     let content3=document.getElementsByClassName('content3')[0]
     content3.innerHTML=""
@@ -144,8 +176,8 @@ for (let pair of formData2.entries()) {
 }
 
 let data = new FormData();
-data.append('src1', formData1);
-data.append('src2', formData2);
+data.append("image_before", formData1);
+data.append("image_after", formData2);
 
 
 console.log('Values inside FormData:');
@@ -154,30 +186,134 @@ for (let pair of data.entries()) {
 }
   
 let loader =document.getElementsByClassName('bg-text')[0]
+loader.classList.remove('d-none')
 
+let mainbox =document.getElementById('main')
+mainbox.classList.add('fetching')
 
-let p = fetch('http://0.0.0.0:8000/improvement',{
+let p = fetch('http://178.16.141.33:8500/improvement',{
             method: "POST",
           
-    body:data})
+    body:data,
+    redirect: 'follow'}
+    )
         p.then((x) => {
 
             return x.json()
 
         })
-.then(
-
-    
-    
-    response =>{ 
+.then(response =>{ 
        
-        
+    console.log(response)
         response.json()})
   .then(data => {
+
+
     
     console.log(data);
 
-    const imageBeforeBase64 = data.image_before;
+    let loader =document.getElementsByClassName('bg-text')[0]
+loader.classList.add('d-none')
+
+let mainbox =document.getElementById('main')
+
+mainbox.classList.remove('fetching')
+mainbox.classList.add('d-none')
+
+
+
+let result=document.createElement('div')
+result.classList.add('row','text-center','py-5')
+result.innerHTML=`<div class="row text-center py-5">
+<div class="col-md-8 col-12 offset-md-2">
+  <h5 class="lead mt-5">The Leading AI Acne Analyzer</h5>
+  <h4 class="display-3 mt-3">Explore Ai Enhanced Skin Acne Analysis</h4>
+  <p class="lead mt-4" style="padding: 0% 10%">
+    Uncover the path to radiant skin with our revolutionary Acne
+    Analyzer Tool. Say goodbye to guesswork and hello to personalized
+    skincare solutions tailored just for you.
+  </p>
+</div>
+</div>
+
+<div class="row mt-5 pt-5">
+<div class="col-md-6 col-12">
+  <div class="row text-center">
+    <div class="col">
+      <img src='data:image/png;base64,` +  data.image_before+`' class="rounded-5" alt="" />
+    </div>
+  </div>
+  <div class="row mx-5 px-lg-5 mt-5">
+    <div class="col">
+      <h3>
+        Skin Score: <span class="text-danger">+ ` +  data.PercentageBefore+`+</span>
+        <span
+          class="bg-danger"
+          style="
+            font-size: medium;
+            color: #ffff;
+            font-weight: 400;
+            padding: 10px 20px;
+            border-radius: 30px;
+          "
+          >Alarming</span
+        >
+      </h3>
+      <h3>Acne:</h3>
+      <p>
+      ` +  data.Acne_pimples+`
+      </p>
+      <h3>Discription</h3>
+      <p>
+      ` +  data.first_image_des+`
+      </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-6 col-12">
+  <div class="row text-center">
+    <div class="col">
+      <img src='data:image/png;base64,` +  data.image_after+`' class="rounded-5" alt="" />
+    </div>
+  </div>
+  <div class="row mx-5 px-lg-5 mt-5">
+    <div class="col">
+      <h3>
+        Skin Score: <span class="text-success">` +  data.PercentageAfter+`</span>
+        <span
+          class="bg-success"
+          style="
+            font-size: medium;
+            color: #ffff;
+            font-weight: 400;
+            padding: 10px 20px;
+            border-radius: 30px;
+          "
+          >Average</span
+        >
+      </h3>
+      <h3>Acne:</h3>
+      <p>
+      ` +  data.Acne_pimples+`
+      </p>
+      <h3>Discription</h3>
+      <p>
+      ` +  data.second_image_des+`
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="row text-center mt-5 py-5" id="conclusion">
+<h6>Conclusion</h6>
+<p>
+  `+data.conclusion+`
+</p>
+</div>`
+let restultscontainer=document.getElementById('result')
+restultscontainer.append(result)
+
+    
     const imageAfterBase64 = data.image_after;
 
     
@@ -194,3 +330,6 @@ let p = fetch('http://0.0.0.0:8000/improvement',{
 
 
 })
+
+
+

@@ -12,106 +12,79 @@
     />
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
+  <body id="start">
+    <div class="container-fluid" id="navbar">
+      <div class="row justify-content-between">
+        <div class="col-5 col-md-2 text-center">
+          <img src="images/Logo.png" class="img-fluid w-75" alt="" />
+        </div>
+        <div class="col-7 nav-bar d-md-block d-none">
+          <ul class="nav mr-auto justify-content-center">
+            <li class="nav-item px-5">
+              <a href="#start" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#working" class="nav-link">How it works</a>
+            </li>
+            <li class="nav-item px-5">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 text-center">
+          <div class="row">
+            <div class="col">
+              <a href="#contact">
+                <button class="btn btn-primary">Contact Us</button></a
+              >
+              <button class="btn btn-primary w-25 d-md-none togglebtn">
+                <img
+                  src="/images/three_10094376.png"
+                  alt=""
+                  width="25px"
+                  class="img-fluid"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center mobileview d-md-none">
+        <div class="col">
+          <ul class="mb-5">
+            <li class="nav-item pt-4 my-4">
+              <a href="#start" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item my-4">
+              <a href="#working" class="nav-link">How it works</a>
+            </li>
+            <li class="nav-item my-4">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="bg-image"></div>
-
-    <div class="bg-text d-none">
-      <h2>Comparing Images</h2>
-      <p>Just give us a second to process your image</p>
-    </div>
-
-    <div class="container-fluid mb-5 d-none" id="result">
-      <div class="row text-center py-5">
-        <div class="col-md-8 col-12 offset-md-2">
-          <h5 class="lead mt-5">The Leading AI Acne Analyzer</h5>
-          <h4 class="display-3 mt-3">Explore Ai Enhanced Skin Acne Analysis</h4>
-          <p class="lead mt-4" style="padding: 0% 10%">
-            Uncover the path to radiant skin with our revolutionary Acne
-            Analyzer Tool. Say goodbye to guesswork and hello to personalized
-            skincare solutions tailored just for you.
-          </p>
-        </div>
-      </div>
-
-      <div class="row mt-5 pt-5">
-        <div class="col-md-6 col-12">
-          <div class="row text-center">
-            <div class="col">
-              <img src="images/Rectangle 44.png" class="rounded-5" alt="" />
-            </div>
-          </div>
-          <div class="row mx-5 px-lg-5 mt-5">
-            <div class="col">
-              <h3>
-                Skin Score: <span class="text-danger">40%</span>
-                <span
-                  class="bg-danger"
-                  style="
-                    font-size: medium;
-                    color: #ffff;
-                    font-weight: 400;
-                    padding: 10px 20px;
-                    border-radius: 30px;
-                  "
-                  >Alarming</span
-                >
-              </h3>
-              <h3>Acne:</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ducimus, voluptatem!
-              </p>
-              <h3>Discription</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                quos aliquid, quo sequi voluptates eius fugit iste vero modi,
-                nisi quis. Dolor vero, exercitationem eveniet quasi mollitia
-                voluptates rerum autem.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-12">
-          <div class="row text-center">
-            <div class="col">
-              <img src="images/Rectangle 44 (1).png" class="rounded-5" alt="" />
-            </div>
-          </div>
-          <div class="row mx-5 px-lg-5 mt-5">
-            <div class="col">
-              <h3>
-                Skin Score: <span class="text-success">60%</span>
-                <span
-                  class="bg-success"
-                  style="
-                    font-size: medium;
-                    color: #ffff;
-                    font-weight: 400;
-                    padding: 10px 20px;
-                    border-radius: 30px;
-                  "
-                  >Average</span
-                >
-              </h3>
-              <h3>Acne:</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ducimus, voluptatem!
-              </p>
-              <h3>Discription</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                quos aliquid, quo sequi voluptates eius fugit iste vero modi,
-                nisi quis. Dolor vero, exercitationem eveniet quasi mollitia
-                voluptates rerum autem.
-              </p>
-            </div>
-          </div>
-        </div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="bg-text d-none">
+        <h2>Comparing Images</h2>
+        <p>Just give us a second to process your image</p>
       </div>
     </div>
+  </div>
+</div>
+   
 
-    <div class="container-fluid " id="main">
+    <div class="container-fluid  " id="result">
+      
+    </div>
+
+    <div class="container-fluid" id="main">
       <div class="container-fluid py-5" id="home">
         <div class="row mt-5">
           <div class="px-md-5 mx-md-5 col-lg-5 col-12">
@@ -141,23 +114,28 @@
                 <div class="row mt-5">
                   <div class="col">
                     <div class="switches">
-                      <button id="analyizebtn" class="active">
+                      <button id="analyizebtn" disabled class="">
                         Analyze Skin
                       </button>
-                      <button id="comparebtn" class="">Compare Results</button>
+                      <button id="comparebtn" class="active">
+                        Compare Results
+                      </button>
                     </div>
                   </div>
                 </div>
 
-                <div class="uploadOuter" id="Analyize">
-                  <span class="dragBox analizeimg" ondragover="drag()" ondrop="drop()">
-                   
+                <div class="uploadOuter d-none" id="Analyize">
+                  <span
+                    class="dragBox analizeimg"
+                    ondragover="drag()"
+                    ondrop="drop()"
+                  >
                     Darg and Drop image here
                     <br /><strong>OR</strong><br />
                     <label for="uploadFile1" class="btn" id="uploadbtn1"
                       >Upload Image</label
                     >
-                  
+
                     <input
                       type="file"
                       onchange="handleFileUpload1(this)"
@@ -166,17 +144,17 @@
                   </span>
                 </div>
 
-                <div class="row d-none" id="Compare">
+                <div class="row" id="Compare">
                   <div class="col-sm-6">
                     <div class="uploadOuter Before">
-                      
                       <span class="dragBox2 showimg2">
-                       
-                      <div class="content2">
-                        Darg and Drop image here
-                        <br /><strong>OR</strong><br />
-                        <label for="uploadFile2" class="btn  " id="uploadbtn2">Upload Image</label>
-                      </div>
+                        <div class="content2">
+                          Darg and Drop image here
+                          <br /><strong>OR</strong><br />
+                          <label for="uploadFile2" class="btn" id="uploadbtn2"
+                            >Upload Image</label
+                          >
+                        </div>
                         <input
                           type="file"
                           onChange="dragNdrop2(event)"
@@ -189,13 +167,14 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="uploadOuter After">
-                     
                       <span class="dragBox3 showimg3">
                         <div class="content3">
-                        Darg and Drop image here
-                        <br /><strong>OR</strong><br />
-                        <label for="uploadFile3" class="btn "id="uploadbtn3" >Upload Image</label>
-                      </div>
+                          Darg and Drop image here
+                          <br /><strong>OR</strong><br />
+                          <label for="uploadFile3" class="btn" id="uploadbtn3"
+                            >Upload Image</label
+                          >
+                        </div>
                         <input
                           type="file"
                           onChange="dragNdrop3(event)"
@@ -210,7 +189,7 @@
 
                 <div class="row text-center">
                   <div class="col">
-                    <button class="btn my-3 mb-5"  id="scanbtn" >Scan Now</button>
+                    <button class="btn my-3 mb-5" id="scanbtn">Scan Now</button>
                   </div>
                 </div>
               </div>
@@ -300,21 +279,20 @@
               >
             </li>
           </ul>
-          <button class="btn">Scan Now</button>
+          <div class="row text-center text-md-start">
+            <button class="btn">Scan Now</button>
+          </div>
         </div>
+
         <div class="col-md-5 col-12 text-md-start text center mt-md-0 mt-5">
-          <img
-            src="/Frontend-with-JS/Skin Analyizer Frontend/images/Aboutmain.png"
-            alt=""
-            class="img-fluid"
-          />
+          <img src="images/Aboutmain.png" alt="" class="img-fluid" />
         </div>
       </div>
     </div>
 
     <div class="container-fluid py-5" id="reviews">
       <div class="container-fluid my-5 py-5" id="card">
-        <div class="row mx-5">
+        <div class="row mx-md-5 text-center text-md-start">
           <div class="col-md-7">
             <h4 class="display-4 mt-md-5 pt-4">
               Acne Analyzer Skincare With Intelligent

@@ -2,9 +2,48 @@
 * {
   font-family: outfit;
 }
+body{
+  overflow-x: hidden;
+  width: 99vw;
+}
+#navbar{
+  background-color: #f1f9f8;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 20px 0px;
+
+}
+#navbar button{
+  background-color: #66bcb9;
+  border: #66bcb9;
+}
+.mobileview{
+height: 0vh;
+overflow: hidden;
+  transition: all 0.3s;
+}
+#navbar li{
+  list-style: none;
+}
+#navbar li a{
+  color: #060e0e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.activenav{
+  text-decoration: underline;
+  color: red;
+}
+#navbar li a:hover{
+  font-weight: 600;
+  text-decoration: underline;
+}
 .bg-image {
-  /* The image used */
-  background-image: url("images/Aboutmain.png");
+
+
 
   /* Add the blur effect */
 
@@ -32,7 +71,14 @@
   width: 50%;
   padding: 30px 80px;
 }
-
+.fetching{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.fetchbody{
+  height: 99vh;
+  overflow: hidden;
+}
 p {
   color: #6a6b7f;
 }
@@ -123,7 +169,9 @@ p {
   }
   padding-top: 15%;
 }
-
+.dragBox{
+  padding-top: 15%;
+}
 .draging {
   transform: scale(1.1);
 }
@@ -197,11 +245,12 @@ p {
   background-image: url(images/Rectangle\ 41.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 75vh;
+  height: 80vh;
   border-radius: 50px;
   color: #ffffff;
   width: 88%;
 }
+
 #card h4 {
   font-weight: 600;
 }
@@ -289,4 +338,27 @@ footer p {
     width: 55vw;
     height: 55vh;
   }
+  #card {
+
+    height: fit-content;
+  
+  }
+}
+#conclusion{
+  background-color: #66bcb9;
+  border-radius: 20px;
+  width: 70%;
+  margin: auto;
+  color: #ffffff;
+  
+  
+}
+#conclusion p{
+color: #ffffff;
+width: 80%;
+margin: auto;
+}
+#uploadbtn3, #uploadbtn2{
+padding:12px 11.3px;
+font-size: small;
 }
