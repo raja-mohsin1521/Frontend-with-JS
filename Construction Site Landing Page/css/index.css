@@ -3,7 +3,7 @@ body {
 }
 
 .screen1 {
-    background-image: url('/pics/banner.jpg');
+    background-image: url('pics/banner.jpg');
     background-repeat: no-repeat;
 
 
@@ -67,7 +67,7 @@ body {
 }
 .screen5{
     background-color: #F1F1F7;
-    background-image: url('/pics/inner-page.png');
+    background-image: url('pics/inner-page.png');
   background-size: 100vw 100vh;
     height: 120vh;
     width: 100vw;
@@ -134,7 +134,7 @@ body {
 }
 
 .screen2 .bimg {
-    background-image: url('/pics/shape.png');
+    background-image: url('pics/shape.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
