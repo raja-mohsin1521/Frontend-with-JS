@@ -245,7 +245,7 @@ p {
   background-image: url(images/Rectangle\ 41.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: fit-content;
   border-radius: 50px;
   color: #ffffff;
   width: 88%;
